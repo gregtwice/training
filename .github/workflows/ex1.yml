@@ -26,7 +26,7 @@ jobs:
 
   Test:
     runs-on: ubuntu-latest
-    if: github.event_name == "workflow_dispatch"
+    if: github.event_name == 'workflow_dispatch'
     needs: build
     environment: Test
     steps:
