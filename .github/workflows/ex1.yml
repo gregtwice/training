@@ -17,4 +17,5 @@ jobs:
     steps:
       - run: echo "triggered by ${{ github.event }}"
       - run: echo "branch is ${{ github.ref }}"
+      - uses: actions/checkout@v4
       - run: tree
